@@ -45,11 +45,24 @@ form.addEventListener("submit", (e) => {
   const englishGPA = calculatGPA(english);
   const mathGPA = calculatGPA(math);
 
-  const totalGPA = (banglaGPA + englishGPA + mathGPA) / 3;
+  let totalGPA = (banglaGPA + englishGPA + mathGPA) / 3;
+
+  if(calculateGrade( bangla) === "F"){
+    totalGPA = 0.00
+  }
+ else if(calculateGrade( english) === "F"){
+    totalGPA = 0.00
+  }
+ else if(calculateGrade( math) === "F"){
+    totalGPA = 0.00
+  }
+  else{
+    totalGPA 
+  }
 
   result.innerHTML = `
-    <p>Bangla: ${calculateGrade( bangla)} (GPA: ${banglaGPA.toFixed(2)})</p>
-    <p>English: ${calculateGrade( english)} (GPA: ${englishGPA.toFixed(2)})</p>
-    <p>Math: ${calculateGrade(math)} (GPA: ${mathGPA.toFixed(2)})</p>
-    <p>আপনার মোট GPA: ${totalGPA.toFixed(2)}</p>`;
+    <p>Bangla: <b>${calculateGrade( bangla)}</b> </p>
+    <p>English: <b>${calculateGrade( english)}</b> </p>
+    <p>Math: <b>${calculateGrade(math)}</b> </p>
+    <p>You got Point: <b>${totalGPA.toFixed(2)}</b></p>`;
 });
