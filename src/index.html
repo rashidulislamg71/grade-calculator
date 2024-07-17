@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Grade Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="innerContent">
+        <div class="markTable">
+            <h2>SSC Greading System</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aut eum harum, et accusantium iusto, quos possimus ullam autem sint debitis, facere totam nobis porro quibusdam nam delectus libero aspernatur.</p>
+          <table>
+            <tr>
+              <th>Marks</th>
+              <th>Points</th>
+              <th>Grade</th>
+            </tr>
+            <tr>
+              <td>70 - 790</td>
+              <td>4.00</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>60 - 69</td>
+              <td>3.50</td>
+              <td>A-</td>
+            </tr>
+            <tr>
+              <td> 50 - 59</td>
+              <td>3.00</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <td> 40- 49</td>
+              <td>2.00</td>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td>33 - 39</td>
+              <td>1.00</td>
+              <td>D</td>
+            </tr>
+            <tr>
+              <td>00 - 32</td>
+              <td>0.00</td>
+              <td>F</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="calculatorForm">
+            <h2>SSC GPA Calculator For Science</h2>
+            <form >
+                <label>Bangla</label><br>
+                <input id="bangla" type="number" placeholder=" Your Number"> <br>
+                <br>
+                <label>English</label> <br>
+                <input  id="english" type="number" placeholder=" Your Number">
+                <br>
+                <br>
+                <label>Math</label> <br>
+                <input id="math" type="number" placeholder=" Your Number">
+                <button>Calculate GPA</button>
+                <div class="GPA">
+                    <h3>Your GPA:</h3>
+                    <b></b>
+                </div>
+            </form>
+
+            <div class="result">
+                <!-- <p>Bangla :- <b id="banglaGPA"></b></p>
+                <p>English :- <b id="englishGPA"></b></p>
+                <p>Math :- <b id="mathGPA"></b></p> -->
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!---Js file link-->
+    <script src="index.js"></script>
+  </body>
+</html>
